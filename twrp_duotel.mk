@@ -21,17 +21,16 @@ $(call inherit-product-if-exists, $(SRC_TARGET_DIR)/product/embedded.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-# Inherit from Babel device
-$(call inherit-product, device/xiaomi/Babel/device.mk)
+$(call inherit-product, device/fiberhome/duotel/device.mk)
 
 # Inherit some common Omni stuff.
 $(call inherit-product, vendor/omni/config/common.mk)
 $(call inherit-product, vendor/omni/config/gsm.mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := Babel
-PRODUCT_NAME := omni_Babel
-PRODUCT_BRAND := Xiaomimijia
-PRODUCT_MODEL := FYJ01QP
-PRODUCT_MANUFACTURER := xiaomi
-PRODUCT_RELEASE_NAME := Xiaomimijia FYJ01QP
+PRODUCT_DEVICE := duotel
+PRODUCT_NAME := twrp_duotel
+PRODUCT_BRAND := duotel
+PRODUCT_MODEL := duotel
+PRODUCT_MANUFACTURER := fiberhome
+PRODUCT_RELEASE_NAME := fiberhome duotel
